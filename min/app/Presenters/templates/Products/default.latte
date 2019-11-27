@@ -1,0 +1,20 @@
+{block content}
+<div class="zbytek">
+    <div class="filtr" id="filtr"></div>
+        <article id="article pt-150">
+    {foreach $products as $product}
+            <div class="mb-30 blok">
+            <h1>{$product->name}</h1> 
+            <div class="img-wrapper">
+            <div class="vyskText">
+            <p> {$product->taste} </p>
+            <p> {$product->description}</p>
+            </div>
+            <img src="../dist/images/{$product->path}">
+            </div>
+            <p>Cena:  kč</p>
+        </div>
+    {/foreach}
+</div>
+</article>
+</div>
